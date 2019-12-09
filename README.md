@@ -10,5 +10,7 @@ Specific tools/methods used:
 * Day 4: Mainly booleans and if/for statements, using Counter from collections to check adjacent repeating numbers
 * Day 5: Retooling IntCode class
 * Day 6: NetworkX shortest path algorithm
-* Day 7: Working on it
+* Day 7: 
+  * Retooled IntCode class again (self.mem for current intcode command when stopped, halt instructions, inputs)
+  * Created Amplif_ensem class to calculate 5 amplifiers, including functions to calculate output for manual input of intcode/phase code, and search for codes maximizing output
 * Day 8: NumPy matrices and the product function from itertools, Pyplot used to display image
