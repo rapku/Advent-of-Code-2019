@@ -10,3 +10,5 @@ Specific tools/methods used:
 * Day 4: Mainly booleans and if/for statements, using Counter from collections to check adjacent repeating numbers
 * Day 5: Retooling IntCode class
 * Day 6: NetworkX shortest path algorithm
+* Day 7: Working on it
+* Day 8: NumPy matrices and the product function from itertools, Pyplot used to display image
