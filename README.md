@@ -16,5 +16,5 @@ Specific tools/methods used:
 * Day 8: NumPy matrices and the product function from itertools, Pyplot used to display image
 * Day 9: IntCode program refactored again, new functionality:
   * spec_mode_manage for parameters referring to writing onto intcode (Thanks to [the post by u/Nexuist on "parameter mode modes](https://www.reddit.com/r/adventofcode/comments/e8aw9j/2019_day_9_part_1_how_to_fix_203_error/)
-  * Changed work_intcode to be a dictionary to allow for intcode indexing of any length (anything indexing the intcode now uses **self.work_intcode.get(value, 0)
+  * Changed work_intcode to be a dictionary to allow for intcode indexing of any length (anything indexing the intcode now uses **self.work_intcode.get(value, 0)**)
   * Adding opcode 9 functionality and adding 'relbase' for relative base storage in self.mem
