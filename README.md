@@ -8,9 +8,13 @@ Specific tools/methods used:
 * Day 2: Developing IntCode class, brute forcing solution using randint (solution for part 2 had 2 variables, both integers from 0-99)
 * Day 3: Numpy arrays for recording coordinates, itertools to determine which points are between each intersection  
 * Day 4: Mainly booleans and if/for statements, using Counter from collections to check adjacent repeating numbers
-* Day 5: Retooling IntCode class
+* Day 5: Refactored IntCode class >> IntCode_v2
 * Day 6: NetworkX shortest path algorithm
 * Day 7: 
-  * Retooled IntCode class again (self.mem for current intcode command when stopped, halt instructions, inputs)
+  * Refactored IntCode_v2 class (self.mem for current intcode command when stopped, halt instructions, inputs)
   * Created Amplif_ensem class to calculate 5 amplifiers, including functions to calculate output for manual input of intcode/phase code, and search for codes maximizing output
 * Day 8: NumPy matrices and the product function from itertools, Pyplot used to display image
+* Day 9: IntCode program refactored again, new functionality:
+  * spec_mode_manage for parameters referring to writing onto intcode (Thanks to [the post by u/Nexuist on "parameter mode modes](https://www.reddit.com/r/adventofcode/comments/e8aw9j/2019_day_9_part_1_how_to_fix_203_error/)
+  * Changed work_intcode to be a dictionary to allow for intcode indexing of any length (anything indexing the intcode now uses **self.work_intcode.get(value, 0)
+  * Adding opcode 9 functionality and adding 'relbase' for relative base storage in self.mem
