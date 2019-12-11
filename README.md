@@ -21,3 +21,8 @@ Specific tools/methods used:
 * Day 10:
   * Checked line of sight using euclidean distance and angle (NumPy linalg.norm() and arctan2() respectively)
   * Part 2 solved mainly through reuse of distance/angle functions and list/dictionary manipulation
+* Day 10: New Class paintBot
+  * paintBot keeps memory of current board state (using (0,0) as start point)
+  * Dictionary holds numpy arrays on how to move bot based on where it's placed (keys are integers 0-3, from up position moving clockwise)
+  * Modulo (%) used whenever the paintbot changes where it faces, to prevent impossible keys
+  * PLT imshow used to display numpy array based on paintBot's memory of current painted state
