@@ -26,3 +26,6 @@ Specific tools/methods used:
   * Dictionary holds numpy arrays on how to move bot based on where it's placed (keys are integers 0-3, from up position moving clockwise)
   * Modulo (%) used whenever the paintbot changes where it faces, to prevent impossible keys
   * PLT imshow used to display numpy array based on paintBot's memory of current painted state
+* Day 12: 
+  * Part 1: Numpy array and where statements for managing position and vector arrays. 
+  * Part 2: Used the same method, but for the 1D array representing each coordinate (x,y,z), iterating until it goes back to original state. Number of steps for all 3 coordinates recorded, and least common multiplier was taken to get point of convergence.
