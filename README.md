@@ -29,3 +29,10 @@ Specific tools/methods used:
 * Day 12: 
   * Part 1: Numpy array and where statements for managing position and vector arrays. 
   * Part 2: Used the same method, but for the 1D array representing each coordinate (x,y,z), iterating until it goes back to original state. Number of steps for all 3 coordinates recorded, and least common multiplier was taken to get point of convergence.
+* Day 13:
+  * collections.Counter for initial game state
+  * Part 2: Use a dictionary to keep the current state of the score, and of the breakable blocks. Use sets to check whether all breakable blocks have moved to the 0 (empty state), as the output of my IntCode program includes all points in the past (including initial board state)
+* Day 14:
+  * Use defaultdicts to hold the following:
+    * A production queue: What things have been produced
+    * A formula dictionary, with the format {PRODUCT: {raw_materials: {}}
