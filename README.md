@@ -35,7 +35,9 @@ Specific tools/methods used:
 * Day 14:
   * Use defaultdicts to hold the following:
     * A production queue: What things have been produced
-    * A formula dictionary, with the format:
+    * A formula dictionary, format is below day 14 notes
+  * Iterate through all materials in the production queue, and make sure each product has enough base components to produce that amount. If not, call the function that produces it until sufficient, and add all products/byproducts to the production queue
+  * Part 2: Manually checked large amounts of FUEL to avoid having to initiate at 1 FUEL, otherwise, same code worked
 
 ```python
 {
@@ -47,8 +49,7 @@ Specific tools/methods used:
 }
 }
 ```
-  * Iterate through all materials in the production queue, and make sure each product has enough base components to produce that amount. If not, call the function that produces it until sufficient, and add all products/byproducts to the production queue
-  * Part 2: Manually checked large amounts of FUEL to avoid having to initiate at 1 FUEL, otherwise, same code worked
+  
 * Day 15:
   * For each tile, check all its neighbors for their tile type and record
   * From the neighboring tiles, randomly choose one that you can move into (not a wall tile) and has not been traversed before. Record new coordinates and input direction
