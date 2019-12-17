@@ -35,4 +35,14 @@ Specific tools/methods used:
 * Day 14:
   * Use defaultdicts to hold the following:
     * A production queue: What things have been produced
-    * A formula dictionary, with the format {PRODUCT: {raw_materials: {}}
+    * A formula dictionary, with the format
+''''
+{
+PRODUCT: 
+{
+raw_materials: {mat1: int, mat2: int}
+call: int (how many times to use this formula)
+base_amt: int (base amount to be produced if called once)
+}
+}
+''''
