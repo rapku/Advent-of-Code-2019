@@ -42,8 +42,8 @@ Specific tools/methods used:
 'PRODUCT': 
 {
 'components: {'mat1': int, 'mat2': int}
-'call: int (how many times to use this formula)
-'base_amt': int (base amount to be produced if called once)
+'call: 0 # how many times to use this formula
+'base_amt': 1 # base amount to be produced if called once
 }
 }
 ```
