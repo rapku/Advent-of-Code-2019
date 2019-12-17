@@ -29,3 +29,28 @@ Specific tools/methods used:
 * Day 12: 
   * Part 1: Numpy array and where statements for managing position and vector arrays. 
   * Part 2: Used the same method, but for the 1D array representing each coordinate (x,y,z), iterating until it goes back to original state. Number of steps for all 3 coordinates recorded, and least common multiplier was taken to get point of convergence.
+* Day 13:
+  * collections.Counter for initial game state
+  * Part 2: Use a dictionary to keep the current state of the score, and of the breakable blocks. Use sets to check whether all breakable blocks have moved to the 0 (empty state), as the output of my IntCode program includes all points in the past (including initial board state)
+* Day 14:
+  * Use defaultdicts to hold the following:
+    * A production queue: What things have been produced
+    * A formula dictionary, format is below day 14 notes
+  * Iterate through all materials in the production queue, and make sure each product has enough base components to produce that amount. If not, call the function that produces it until sufficient, and add all products/byproducts to the production queue
+  * Part 2: Manually checked large amounts of FUEL to avoid having to initiate at 1 FUEL, otherwise, same code worked
+
+```python
+{
+'PRODUCT': 
+{
+'components: {'mat1': 3, 'mat2': 4}
+'call': 0 # how many times to use this formula
+'base_amt': 1 # base amount to be produced if called once
+}
+}
+```
+  
+* Day 15:
+  * For each tile, check all its neighbors for their tile type and record
+  * From the neighboring tiles, randomly choose one that you can move into (not a wall tile) and has not been traversed before. Record new coordinates and input direction
+  * If no existing neighboring tiles fulfill said condition (free tile, have not been there before), remove last direction and return to last position and repeat process
