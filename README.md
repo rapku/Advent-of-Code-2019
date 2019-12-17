@@ -41,9 +41,15 @@ Specific tools/methods used:
 {
 'PRODUCT': 
 {
-'components: {'mat1': int, 'mat2': int}
+'components: {'mat1': 3, 'mat2': 4}
 'call': 0 # how many times to use this formula
 'base_amt': 1 # base amount to be produced if called once
 }
 }
 ```
+  * Iterate through all materials in the production queue, and make sure each product has enough base components to produce that amount. If not, call the function that produces it until sufficient, and add all products/byproducts to the production queue
+  * Part 2: Manually checked large amounts of FUEL to avoid having to initiate at 1 FUEL, otherwise, same code worked
+* Day 15:
+  * For each tile, check all its neighbors for their tile type and record
+  * From the neighboring tiles, randomly choose one that you can move into (not a wall tile) and has not been traversed before. Record new coordinates and input direction
+  * If no existing neighboring tiles fulfill said condition (free tile, have not been there before), remove last direction and return to last position and repeat process
